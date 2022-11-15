@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+<h1>Imagem Dinâmica</h1>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexivel">
+</picture> 
+
+<h1>Reproduzindo Audio</h1> <!--Compatível com formato MP3(mpeg)// WAV // OGG-->
+<p>Vamos aprender a reproduzir audio e HTML5.</p>
+<audio preload="auto" autoplay controls>
+    <source src="midia/Rag'N'Bone-Man.mp3" type="audio/mpeg">
+    <source src="midia/Fool's-Garden-Lemon-Tree.mp3" type="audio/mpeg">
+       <p>Infelizmente seu navegador não suporta este formato de arquivo. Click <a href="midia/Rag'N'Bone-Man.mp3">aqui</a> para baixar o arquivo.</p>
+</audio>
+
+<h1>Inserindo Videos Localmente</h1>
+<p>Este vídeo está hospedado no meu próprio servidor.</p>
+<video width="500" controls poster="imagens/tumb.jpg">
+    <source src="videos/videoplayback.mp4" type="video/mp4">
+    <source src="videos/Videoplayback.m4v" type="video/mp4">
+    <source src="videos/Videoplayback.webm" type="video/webm">
+    <p>Seu navegador não suporta o formato de video. Atualize o navegador ou tente em outro.</p>
+</video>
+
+<h1>Inserindo Vídeos Externos</h1>
+<p>Incorporando vídeo do youtube.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ck75pk3kngQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

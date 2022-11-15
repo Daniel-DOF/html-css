@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV's</title>
+    <style>
+div{
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    margin-right: auto;
+    font-weight: bold;
+    margin: 3px;
+    display: grid;
+    text-shadow: 1px 1px 5px;
+    height: auto;
+
+}
+div > p{
+    display: none;
+    color: black;
+    
+}
+
+div:hover{
+    color: blue;
+}
+
+div:hover > p{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 30px;
+    color: rgb(206, 4, 4);
+    
+}
+div > div{
+    display: none;
+    color: blue;
+}
+div:hover > div{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 30px;
+    color: rgb(4, 41, 206);
+}
+p{
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: none;
+    height: 0px;
+    line-height: 0px;
+    
+}
+    </style>
+</head>
+<body>
+    <h1>DIV's</h1>
+    
+    <div>
+    Acessorio
+        <p>Relogio</p>         
+        <p>Cinto</p>
+        <p>Colar</p>
+        <p>Pulseira</p>
+        <p>Brinco</p>
+        <p>Anel</p>
+    </div>
+    
+    <div>
+        Tecnologia
+        <p>Smartphone</p>
+        <p>Tablete</p>
+        <p>TV's</p>
+        <p>Computador</p>
+        <p>Notbook</p>
+        <p>Peças Sobressalhentes</p>
+    </div>
+    <div>
+        Casa
+        <p>Meu 1º Tijolo</p>
+        <p>MInha 1ª Telha</p>
+        <p>Janela</p>
+        <p>Porta</p>
+        <p>Cimento</p>
+        <p>Contrate o Pedreiro</p>
+    </div>
+</body>
+</html>

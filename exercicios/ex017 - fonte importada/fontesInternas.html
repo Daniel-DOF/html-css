@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Interna</title>
+    <style>
+       /*
+       Tipos de formato:
+
+       -opentype(otf);
+       -trutype(ttf);
+       -embedded-opentype;
+       -trutype-aat(Apple advancet Tipography);
+       -SVG.
+       
+       */
+       
+       @font-face {
+            font-family:'bruxa';
+            src: url('fonts/HalloweenWitches-Display.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal; 
+        }
+        @font-face {
+            font-family: 'sexta';
+            src: url('fonts/HalloweenWitches-Script.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+
+        h1{
+            font-family: 'sexta',Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+        p{
+            font-family: 'bruxa','Courier New', Courier, monospace;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Feliz Halloween</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, error enim. Minima mollitia rem ullam tenetur, atque, esse cumque numquam omnis iure officia enim, ex eos alias! Dolorem, alias eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati asperiores ullam omnis sit tempora cum aut nam dolore, doloribus rem labore non ex. Ut, officiis a? Iusto, beatae nisi!</p>
+    
+</body>
+</html>

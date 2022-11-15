@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*
+Em HTML, id = CSS é # ---> só idntifica 01.
+Em HTML, Class = CSS é . ---> identifica vários.
+*/
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #fcc5ee;
+    font-size: 1em;
+}
+
+h1{
+    color: #0D0D0D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h1#principal{
+    color: rgb(25, 0, 255);
+    
+}
+h2{
+    color: #BF9969;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.basico{
+    color: #69bf69;
+    font-weight: bold;
+}
+.intermediario{
+    color: #696abf;
+    font-weight: bold;
+}
+.avancado{
+    color: #bf6969;
+    font-weight: bold;
+}
+
+.marcado{
+    background-color: #c49bba;
+}

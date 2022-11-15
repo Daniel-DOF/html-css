@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <Style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Ultra&display=swap');
+        body{
+            background-color:#7BB1EC;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+
+        header{
+            background-color: #7BB1EC;
+            font-weight: bolder;
+            font-style: normal;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+
+        article{
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        nav{
+            background-color:#364F69;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 10px 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.37);
+            border-radius: 3px;
+        }
+       
+        nav > a{
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+            margin-left: 30px;
+                  
+        }
+        nav > a:hover{
+            color: #7BB1EC;
+
+        }
+       
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 0px;
+        }
+
+        h2{
+            background-color: #173E69;
+            color: #7BB1EC;
+            text-align: center;
+            margin: 0px;
+        }
+        p{
+            text-align: justify;
+            padding: 0px 10px;
+            text-indent: 40px;
+        }
+
+        footer{
+            background-color: #364F69;
+            padding: 1px;
+            text-align: center;
+            margin: 10px 0px;
+            border-radius: 5px;
+        }
+
+        footer > p{
+            text-align: center;
+        }
+
+        footer > p > a{
+            color: white;
+            text-decoration: none;
+        }
+
+        footer > p > a:hover{
+            color: #7BB1EC;                 
+        }
+
+        aside{
+            background-color: #3597ff6b;
+            color: #173E69;
+            font-weight: bold;
+            padding: 1px;
+            text-align: right;
+        }
+
+        header > h1{
+            background-color: #296DB8;
+            font-family: 'Lobster Two', cursive;
+            color:white;
+            font-size: 2.5em;
+            box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 0.438);
+            border-radius: 5px;
+            border: 1px solid #364F69;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    <main>
+        <section id="assuntos">
+            <h2>Forró da Veia</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis quam est doloremque. Rem facilis laboriosam, exercitationem aliquid dicta obcaecati error fugit culpa, tempora illo at! Quis temporibus repellendus est.</p>
+                <aside>
+                    Autor: Moranguinho do Nordeste
+                </aside>
+            </article>
+
+        </section>
+        <section id="noticias">
+            <h2>Situação Política do Brasil</h2>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio officiis totam placeat fuga adipisci voluptates nobis quia reiciendis dolor, delectus minus corrupti beatae animi. Perferendis quas nemo earum dolore.</p>
+                <aside>
+                    Autor: Zé Pequeno
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por um aluno do <a href="">CursoEmVídeo</a></p>
+    </footer>
+
+    </header>
+    
+</body>
+</html>
