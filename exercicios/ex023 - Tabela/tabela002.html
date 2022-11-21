@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Grande</title>
     <style>
+        :root{
+            cor1: --rgb(27, 80, 196);
+            cor2: --rgb(34, 100, 243);
+        }
         body{
             background-color: rgb(227, 227, 252);
             font-family: Arial, Helvetica, sans-serif;
@@ -39,14 +43,21 @@
             font-variant: small-caps;
             border-radius: 5px 5px 0px 0px;
             color: white;
+            border: 2px solid white;
+            border-bottom: none;
+        }
+        /*Efeito ZEBRADO*/
+        tbody > tr:nth-child(odd){ /*pode ser usado no lugar de ODD(par) = 2n -1
+                                    No lugar de EVEN(impar) = 2n*/
+            background-color: rgb(151, 185, 255);
         }
         th, td{
-            border: 1px solid black;
+            border: 2px solid white;
             padding: 10px;
         }
 
         thead, tfoot{
-            background-color: rgb(99, 126, 247);
+            background-color: rgb(55, 89, 241);
             font-weight: bold;
         }
 
@@ -65,7 +76,7 @@
     </header>
     <!-- TABLE recebe Thead(cabeça) > Tbody(corpo) > Tfoot(rodapé) -->
     <table>
-        <caption>Organização Populacional por Estados</caption>
+        <caption>População por Estados</caption>
         <thead>
             <tr>
                 <th scope="col">Unidade Federativa</th>
