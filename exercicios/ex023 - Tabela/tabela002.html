@@ -7,28 +7,51 @@
     <title>Tabela Grande</title>
     <style>
         body{
+            background-color: rgb(227, 227, 252);
             font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            margin: auto;
         }
 
+        header{
+            font-size: 1em;
+            background-image: linear-gradient(to bottom,darkblue, blue);
+            width: 100vw;
+            color: white;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            font-variant: small-caps;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+        }
         table{
             border-collapse: collapse;
             width: 500px;
+            background-color: white;
+            margin: auto;
+            margin-top: 50px;
         }
         caption{
             font-size: 1.2em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgrey;
+            background-image:linear-gradient(to bottom,rgb(27, 80, 196), rgb(34, 100, 243));
             font-variant: small-caps;
+            border-radius: 5px 5px 0px 0px;
+            color: white;
         }
         th, td{
             border: 1px solid black;
             padding: 10px;
-            text-align: center;
         }
 
         thead, tfoot{
-            background-color: lightgray;
+            background-color: rgb(99, 126, 247);
+            font-weight: bold;
+        }
+
+        tfoot > tr > th{
+            text-align: left;
         }
         .num{
             text-align: right;
@@ -37,14 +60,16 @@
     </style>
 </head>
 <body>
-    <h1>Organização Semântica pa Tabelas Grandes</h1>
+    <header>
+        <h1>Semântica para Tabelas Grandes</h1>
+    </header>
     <!-- TABLE recebe Thead(cabeça) > Tbody(corpo) > Tfoot(rodapé) -->
     <table>
         <caption>Organização Populacional por Estados</caption>
         <thead>
             <tr>
                 <th scope="col">Unidade Federativa</th>
-                <th scope="col">População(2021)</th>
+                <th scope="col" style="width: 70px;">População(2021)</th>
             </tr>
 
         </thead>
@@ -157,7 +182,7 @@
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td>213 317 639</td>
+                <td class="num">213 317 639</td>
             </tr>
         </tfoot>
     </table>
