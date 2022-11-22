@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio ex23 03</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            background-image:linear-gradient(to bottom, gray, darkgray);
+            padding: 10px;
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        td{
+            text-align: center;
+        }
+
+        .bgcolor{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+        .alileft{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Média</caption>
+        <thead class="bgcolor">
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Nota</th>
+                <!--th/td-->
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <!--th/td-->
+                <!--th/td-->                     
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <!--th/td-->        
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--Linha 1 Exatas-->
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td class="alileft">Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!--Linha 2 Exatas-->
+                <!--th/td-->
+                <td class="alileft">Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!--Linha 3 Exatas-->
+                <!--th/td-->
+                <td class="alileft">Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!--Linha 4 Exatas-->
+                <!--th/td-->
+                <td class="alileft">Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="bgcolor"> <!--Linha 5 média exatas-->
+                <th colspan="4" scope="row" class="alileft">Média de Exatas</th>
+                <!--th/td-->
+                <!--th/td-->
+                <!--th/td-->
+                <td>0.0</td>
+            </tr>
+
+            <tr> <!--Linha 6 Humanas-->
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td class="alileft">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!--Linha 7 Humanas-->
+                <!--th/td-->
+                <td class="alileft">História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="bgcolor"> <!--Linha 8 média humanas-->
+                <th colspan="4" scope="row" class="alileft">Média de Exatas</th>
+                <!--th/td-->
+                <!--th/td-->
+                <!--th/td-->
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
