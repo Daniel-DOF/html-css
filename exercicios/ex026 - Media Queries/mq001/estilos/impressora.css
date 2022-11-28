@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Media query para Impressora*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html, body{
+    width: 100vw;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+
+}
+
+header{
+    text-align: center;
+}
+
+header > menu{
+    display: none;
+}
+
+article::after{
+    border-bottom: 1px solid black;
+    content: 'Artigo produzido por www.cursoemvideo.com';
+    position: absolute;
+    top: 98%;
+    left: 0%;
+    width: 100vw;
+}
