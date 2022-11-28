@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 07</title>
+</head>
+<body>
+    <h1>Formulário 07 - Select / Datalist / Textarea</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p> <!--Select: lista de seleção de itens-->
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" style="text-align: center;">--Select--</option>
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">RioGrande do Norte</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>          
+            </select>
+        </p>
+
+        <p> <!--Datalist: apresenta uma lista de seleção, entretanto, o usuário caso não encontre a opção desejada, tem a liberdade de digitar/criar a opção-->
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lsdprof">
+            <datalist id="lsdprof">
+                    <option>Administrador</option>
+                    <option>Contador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p> <!--Textarea: Ensio de mensagens.-->
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Tem uma mensagem para nós?"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
