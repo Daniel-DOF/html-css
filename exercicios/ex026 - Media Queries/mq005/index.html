@@ -7,11 +7,14 @@
     <title>Media Query</title>
    <!--<link rel="stylesheet" href="estilos/style.css">--> 
    <link rel="stylesheet" href="estilos/mobile-first.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Testando Media Queries</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Artigos</a></li>
@@ -52,12 +55,28 @@
             <h2>Media Queries – Solução</h2>
             <p>A solução é que as media queries definem condições de um CSS especifico, isso significa que se essas condições forem aprovadas, ou seja, se o dispositivo se adequar a todas as condições, o CSS será aplicado. <a href="https://www.devmedia.com.br/utilizando-css-media-queries/27085" target="_blank">Leia Mais...</a></p>
 
-            <aside class="destaque">Artigo retirado do site <a href="https://www.devmedia.com.br/utilizando-css-media-queries/27085" target="_blank">devmedia</a></aside>
+            <aside id="destaque">Artigo retirado do site <a href="https://www.devmedia.com.br/utilizando-css-media-queries/27085" target="_blank">devmedia</a></aside>
         </article>
         <article>
 
         </article>
     </main>
-    
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else { 
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
