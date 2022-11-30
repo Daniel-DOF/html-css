@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   <!--<link rel="stylesheet" href="estilos/style.css">--> 
+   <link rel="stylesheet" href="estilos/mobile-first.css">
+</head>
+<body>
+    <header>
+        <h1>Testando Media Queries</h1>
+        <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artigos</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Guias</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h1>Utilizando CSS Media Queries</h1>
+        <h3>
+            Veja neste artigo como fazer com que páginas HTML tenham diferentes comportamentos e formatações, de acordo com as características do dispositivo no qual estão sendo visualizadas. Isso é possível utilizando as CSS Media Queries.</h3>
+        <article>
+            <p>Neste artigo vamos falar sobre Media Queries, que é a utilização de Media Types com uma ou mais expressões envolvendo características de uma media para definir formatações para diversos dispositivos. Os browsers ou as aplicações lêem as expressões definidas na Query, caso o dispositivo em questão se encaixe nessas requisições o CSS será aplicado.</p>
+            <h2>Explicando o que é Media types</h2>
+            <p>Os media types definem para que tipo de media um certo código CSS é direcionado. O HTML foi gerado para ser portátil, ou seja, lido e interpretado por qualquer tipo de dispositivo. Só que cada dispositivo exibe o HTML de uma maneira, devido a fatores como, por exemplo, as dimensões da tela. Supondo que visatamos um site através de um desktop, ele não terá a mesma reação de que se visitarmos por um dispositivo móvel. Isso ocorre porque são dispositivos diferentes e formas diferentes de navegação.</p>
+            <p>Para que possamos manter nossas páginas sempre adequadas a cada tipo de visualização, utilizamos os media types, que são listados abaixo de acordo com sua utilização.</p>
+                <aside>
+                    <ul>
+                        <li><strong>All:</strong> Para todos os dispositivos.</li>
+                        <li><strong>Braille: </strong>Para dispositivos táteis.</li>
+                        <li><strong>Embossed:</strong> Para dispositivos que imprimem em braile.</li>
+                        <li><strong>Handheld:</strong> Para dispositivos portáteis, geralmente com telas pequenas e banda limitada.</li>
+                        <li><strong>Print:</strong> Para impressão em papel.</li>
+                        <li><strong>Projection:</strong> Para apresentações como PPS.</li>
+                        <li><strong>Screen:</strong> Para monitores ou dispositivos com telas coloridas e resolução adequada.</li>
+                        <li><strong>Speech:</strong> Para sintetizadores de voz. As CSS 2 tem uma especificação de CSS chamada Aural, onde podemos formatar a voz dos sintetizadores.</li>
+                        <li><strong>Tty:</strong> Para dispositivos que possuem uma grade fixa para exibição de caracteres, tais como: Teletypes, Terminais e também dispositivos portáteis com display limitados.</li>
+                        <li><strong>Tv:</strong> Para dispositivos como televisores, ou seja, com baixa resolução, quantidade de cores e scroll limitados.</li>
+                    </ul>
+                </aside>
+            <p>Observação: Os nomes das medias são todas case-sensitive, ou seja, letras maiúsculas e minúsculas são diferenciadas.</p>
+
+            <h2>Media Queries - Problemas</h2>
+            <p>Os problemas das media queries são que cada vez mais surgem dispositivos com diversos tamanhos e também com hardwares bem parecidos aos dos desktops, fazendo com que esses dispositivos tenha uma navegação quase igual aos dos desktops. Podemos citar como exemplo o iPhone, sua tela tem excelente qualidade e seu navegador reproduz as páginas como um navegador comum de desktop). Assim não há a necessidade de preparar um layout e um CSS com media type Handheld para o iPhone, pois mesmo ele sendo um Handheld, ele não trabalha como um, porém, é importante frisar que ele também não trabalha exatamente como um desktop. Mesmo a renderização do MobileSafari sendo idêntica ao de um desktop, existe a questão do comportamento do usuário e a forma de navegação que são diferentes. Assim ficamos em um meio termo, nem podendo disponibilizar um CSS específico para Handheld e nem um CSS totalmente Screen.</p>
+
+            <h2>Media Queries – Solução</h2>
+            <p>A solução é que as media queries definem condições de um CSS especifico, isso significa que se essas condições forem aprovadas, ou seja, se o dispositivo se adequar a todas as condições, o CSS será aplicado. <a href="https://www.devmedia.com.br/utilizando-css-media-queries/27085" target="_blank">Leia Mais...</a></p>
+
+            <aside class="destaque">Artigo retirado do site <a href="https://www.devmedia.com.br/utilizando-css-media-queries/27085" target="_blank">devmedia</a></aside>
+        </article>
+        <article>
+
+        </article>
+    </main>
+    
+</body>
+</html>
